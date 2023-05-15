@@ -1,241 +1,288 @@
 *{
-    background-color: #BDC4A7;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Mochiy Pop One', sans-serif;
+    text-decoration: none;
 }
 
-.navbar{
+body{
+    overflow-x: hidden;
+}
+
+#main-width{
+    width: 80em;
+    max-width: 95%;
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(webdevelopment.png);
+    background-size: cover;
+    background-position:center;
+    position: relative;
+}
+
+header{
+    height: 3em;
     display: flex;
-    justify-content:center;
     align-items: center;
-    background-color: #93827F;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    top: 0;
+    justify-content: space-between;
 }
 
-.navbar ul{
+.logo i{
+    height: 0.5em;
+    width: 0.5em;
+    background: transparent;
+    color: #FA5F86;
+    border-radius: 50%;
+    border: 1em solid white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+#navbar{
     display: flex;
     list-style: none;
-    margin: 20px 0px;
-    justify-content: space-evenly;
-    
+}
+nav #navbar ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:nowrap;
+    flex-direction: row;
 }
 
-.navbar ul li{
-    color: #2F2F2F;
-    padding: 8px 25px;
-    background-color:#93827F;
+nav #navbar li a{
+    color: white;
     font-weight: bold;
+    font-size: 1em;
+    padding: 0.5em;
+    margin-left: 6.5em;
+    margin-bottom: 5em;
 }
 
-.navbar ul li a{
-    text-decoration: none;
-    color: #2F2F2F;
-    background-color: #93827F;
+nav #navbar li:not(:last-child) a:hover{
+    color: rgb(0, 230, 188);
 }
 
-.navbar ul li a:hover{
-    background-color: #93827F;
-    color: white;
-    box-shadow: 0 0 10px white;
+#container{
+    padding-top: 1em;
 }
 
-#home{
+#herotext{
+margin-bottom: 1em;
+}
+
+#herotext h1{
     display: flex;
-    flex-direction: column;
+    color: white;
+    font-size:3rem;
+    margin-left: 3em;
+
+}
+span{
+    color:rgb(0, 230, 188);
+}
+
+#herotext h3{
+    color: white;
+    font-weight: 400;
+    font-size: 3rem;
+    margin-left: 8em;
+}
+
+#herotext p{
+    display: flex;
+    align-items: center;
+    width: 40em;
+    max-width: 100%;
+    color: white;
+    font-size: 1rem;
+    margin-left: 10em;
+    padding: 3em;
+
+}
+
+#about{
+    width: 100%;
+    padding: 6.25em 0em;
+    background-color: #F0A7AB;
+}
+
+#about img{
+    height: auto;
+    width: 20em;
+    border-radius: 20%
+}
+
+#about-text{
+    width: 35em;
+}
+
+#main{
+    width: 71em;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#about-text h2{
+    color: white;
+    font-size: 5rem;
+    text-transform: capitalize;
+    margin-bottom: 1.2em;
+    text-decoration: underline solid rgb(0, 230, 188);
+
+}
+#about-text h5{
+    color: black;
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin-bottom: 1.5em;
+}
+
+#about-text p{
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin-bottom: 2.8em;
+}
+
+#experience{
+    width: 100%;
+    padding: 3.5em 10%;
+    background-color: #DAC4F7;
+}
+
+#row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
+}
+
+#title{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:white;
+    padding: 0em 0em 1.2em 1.9em;
+
+}
+
+#contents{
+    padding: 0em 2.5em;
+    border-left: 0.5em solid rgb(0, 230, 188);
+}
+
+#box{
+    position: relative;
+    padding: 1.5em;
+    border: .2em solid black;
+    background-color: white;
+    cursor: pointer;
+    margin-bottom: 1.5em;
+}
+
+#box:hover{
+    box-shadow: 0 0 0.75em grey;
+    border: 0.2em solid transparent;
+}
+
+#box:before{
+    content: '';
+    position: absolute;
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 50%;
+    right: 100%;
+    top: 0;
+    background-color:rgb(0, 230, 188);
+    border: 0.5em solid white;
+}
+
+#portfolio{
+    width: 100%;
+    padding: 3.5em 10%;
+    background-color: #54BF8D;
+}
+
+#projectboxes{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:black;
+    padding: 0em 0em 1.2em 1.9em;
+}
+
+#porttitle{
+    display: flex;
+    font-size: 2em;
     justify-content: center;
     align-items: center;
 }
 
-
-.headings{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: flex-end;
-    margin-left: auto;
-    padding: 50px;
-    align-content: space-evenly;
-    column-gap: 30px;
+#projects{
+    padding: 0em 2.5em;
+    border-left: 2em solid #DAC4F7;
+    border-right: 2em solid #DAC4F7;
 
 }
-.header{
-    text-align: right;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 64px;
-    color: white;
-    justify-content: flex-end;
-}
-.header2{
-    text-align: right;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 32px;
-    color: white;
-    justify-content: flex-end;
-    margin: 50px;
-}
-.homepageimg{
-    height: 900px;
-    width: 1000px;
-    border: 4px solid black;
-    object-fit:scale-down;
-    background-image:url(homepageimg.png);
-    padding: 10px;
-}
-#About.html{
+
+#projects1{
+    position: relative;
+    padding: 1.5em;
+    border: .2em solid black;
+    background-color: white;
+    cursor: pointer;
+    margin-bottom: 1.5em;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
-.headings2{
+#projects2{
+    position: relative;
+    padding: 1.5em;
+    border: .2em solid black;
+    background-color: white;
+    cursor: pointer;
+    margin-bottom: 1.5em;
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: flex-end;
-    margin-left: auto;
-    padding: 50px;
-    align-content: space-evenly;
-    column-gap: 30px;
-
-}
-.aboutme{
-    text-align: right;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 64px;
-    color: white;
-    justify-content: flex-end;
-}
-.aboutmeinfo{
-    text-align: right;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 32px;
-    color: white;
-    justify-content: flex-end;
-    margin: 50px;  
-}
-
-.familypicture{
-    width: 400px;
-    height: 400px;
-    display: block;
-    margin-left: auto;
-    object-fit: scale-down;
-    background-image: url(easterpicture.png);
-}
-
-#Portfolio.html{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
-.headings3{
+#projects3{
+    position: relative;
+    padding: 1.5em;
+    border: .2em solid black;
+    background-color: white;
+    cursor: pointer;
+    margin-bottom: 1.5em;
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: flex-end;
-    margin-left: auto;
-    padding: 50px;
-    align-content: space-evenly;
-    column-gap: 30px;
-
-}
-.portfolio{
-    text-align: right;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 64px;
-    color: white;
-    justify-content: flex-end;
-}
-.portfolioinfo{
-    text-align: right;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 32px;
-    color: white;
-    justify-content: flex-end;
-    margin: 50px;  
-}
-
-.underconstructionimg{
-    width: 400px;
-    height: 400px;
-    display: block;
-    margin-left: auto;
-    object-fit: scale-down;
-    background-image: url("https://t3.ftcdn.net/jpg/03/53/83/92/360_F_353839266_8yqhN0548cGxrl4VOxngsiJzDgrDHxjG.jpg");
-    border: 5px bold white;
-}
-#Experience.html{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
-.headings4{
+#contactme{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #904FE6;
+}
+#Contacttitle h1{
+margin-bottom: 2rem;
+}
+
+form{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: flex-end;
-    margin-left: auto;
-    padding: 50px;
-    align-content: space-evenly;
-    column-gap: 30px;
-
-}
-.experience{
-    text-align: right;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 64px;
-    color: white;
-    justify-content: flex-end;
-}
-.experienceinfo{
-    text-align: right;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 32px;
-    color: white;
-    justify-content: flex-end;
-    margin: 50px;  
-}
-#Contact.html{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.headings5{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: flex-end;
-    margin-left: auto;
-    padding: 50px;
-    align-content: space-evenly;
-    column-gap: 30px;
-
-}
-.contactme{
-    text-align: right;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 64px;
-    color: white;
-    justify-content: flex-end;
-}
-.contactmeinfo{
-    text-align: right;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 32px;
-    color: white;
-    justify-content: flex-end;
-    margin: 50px;  
+    width: 24rem;
+    gap: 1rem;
 }
